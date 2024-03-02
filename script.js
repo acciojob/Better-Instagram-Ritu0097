@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function drop(event) {
         event.preventDefault();
         if (draggedElement !== event.target) {
-            const tempInnerHTML = draggedElement.innerHTML;
-            draggedElement.innerHTML = event.target.innerHTML;
-            event.target.innerHTML = tempInnerHTML;
+            const tempSrc = draggedElement.src;
+			draggedElement.src = event.target.src;
+			event.target.src = tempSrc;
         }
     }
     const draggableElements = document.querySelectorAll('.image');
