@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     let draggedElement = null;
-
     function dragStart(event) {
         draggedElement = event.target;
     }
